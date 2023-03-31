@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d76438d5-54fb-4849-b021-ae0a09782d80" name="Changes" comment="запушив базу, розв'язую">
+    <list default="true" id="d76438d5-54fb-4849-b021-ae0a09782d80" name="Changes" comment="запушив базу, розв'язую далі">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodb2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb2.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +57,7 @@
       <workItem from="1680120653349" duration="2686000" />
       <workItem from="1680123555566" duration="4564000" />
       <workItem from="1680176632291" duration="1000" />
-      <workItem from="1680185918843" duration="26175000" />
+      <workItem from="1680185918843" duration="30714000" />
     </task>
     <task id="LOCAL-00001" summary="запушив базу">
       <created>1680123448743</created>
@@ -74,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680206788654</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="запушив базу, розв'язую далі">
+      <created>1680256698029</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680256698029</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +100,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="запушив базу" />
     <MESSAGE value="запушив базу, розв'язую" />
-    <option name="LAST_COMMIT_MESSAGE" value="запушив базу, розв'язую" />
+    <MESSAGE value="запушив базу, розв'язую далі" />
+    <option name="LAST_COMMIT_MESSAGE" value="запушив базу, розв'язую далі" />
   </component>
 </project>
