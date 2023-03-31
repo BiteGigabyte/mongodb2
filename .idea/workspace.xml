@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d76438d5-54fb-4849-b021-ae0a09782d80" name="Changes" comment="запушив базу, розв'язую далі">
+    <list default="true" id="d76438d5-54fb-4849-b021-ae0a09782d80" name="Changes" comment="розв'язую ще 2 і буду ще пробувати через агрегатки або наоборот дещо вирішити">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54ffa3ca-4a5a-4a88-91b6-58c8de6f3f9b.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongodb2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb2.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +34,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "database.data.extractors.current.export.id": "JSON-Groovy.json.groovy",
+    "database.data.extractors.current.id": "JSON-Groovy.json.groovy",
     "last_opened_file_path": "C:/Users/yurii/IdeaProjects/mongodb/mongodb1.txt",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -57,7 +61,8 @@
       <workItem from="1680120653349" duration="2686000" />
       <workItem from="1680123555566" duration="4564000" />
       <workItem from="1680176632291" duration="1000" />
-      <workItem from="1680185918843" duration="30714000" />
+      <workItem from="1680185918843" duration="34269000" />
+      <workItem from="1680269459794" duration="5625000" />
     </task>
     <task id="LOCAL-00001" summary="запушив базу">
       <created>1680123448743</created>
@@ -80,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680256698029</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="розв'язую ще 2 і буду ще пробувати через агрегатки або наоборот дещо вирішити">
+      <created>1680263365835</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680263365835</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +113,7 @@
     <MESSAGE value="запушив базу" />
     <MESSAGE value="запушив базу, розв'язую" />
     <MESSAGE value="запушив базу, розв'язую далі" />
-    <option name="LAST_COMMIT_MESSAGE" value="запушив базу, розв'язую далі" />
+    <MESSAGE value="розв'язую ще 2 і буду ще пробувати через агрегатки або наоборот дещо вирішити" />
+    <option name="LAST_COMMIT_MESSAGE" value="розв'язую ще 2 і буду ще пробувати через агрегатки або наоборот дещо вирішити" />
   </component>
 </project>

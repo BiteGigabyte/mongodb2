@@ -353,7 +353,63 @@ db.students.find({
 db.teacher.find()
 db.students.find()
 //
-
+//групування по 1 студенту найкращому з класу по макс оцінці та макс предметах вивчення
+db.students.aggregate([
+    {
+        $group: {
+            // _id: null,
+            _id: '$class',
+            maxGrade: {$max: '$avgScore'},
+            maxLessons: {$max: {$size: '$lessons'}},
+        }
+    },
+    {
+        $sort: {
+            maxLessons: -1,
+            maxGrade: -1
+        }
+    },
+    {
+        $limit: 1
+    },
+    {
+        $project: {
+            class: '$_id',
+            maxGrade: 1,
+            maxLessons: 1,
+            _id: 0
+        }
+    }
+])
+//
+// групування по середній оцінці класу
+db.students.aggregate([
+    {
+        $group: {
+            // _id: null,
+            _id: '$class',
+            maxGrade: {$avg: '$avgScore'},
+            maxLessons: {$max: {$size: '$lessons'}},
+        }
+    },
+    {
+        $sort: {
+            maxGrade: -1,
+            // maxLessons: -1,
+        }
+    },
+    {
+        $limit: 1
+    },
+    {
+        $project: {
+            class: '$_id',
+            maxGrade: 1,
+            maxLessons: 1,
+            _id: 0
+        }
+    }
+])
 
 
 
