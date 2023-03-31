@@ -146,7 +146,7 @@ db.students.insertMany(
             ]
         }
     ]
-);
+    );
 
 
 db.teacher.insertMany(
@@ -161,7 +161,8 @@ db.teacher.insertMany(
         {"name": "Mikhailo Denisovick", "class_curator": 2, "lesson": "basic", "payment": 2300},
         {"name": "Diana Viktorivna", "class_curator": 1, "lesson": "basic", "payment": 2100}
     ]
-);
+    );
+
 
 
 
@@ -214,27 +215,93 @@ db.students.find().sort({avgScore: -1}).limit(3)
 
 // 9) Знайти середній бал по школі
 //
+db.students.aggregate([
+    {
+        $group: {
+            _id:null,
+            avg: {$avg: '$avgScore'}
+        }
+    }
+])
+
+// 10) Знайти середній бал дітей які вивчають математику або фізику
+//
+db.students.aggregate([
+    {
+        $match: {
+            $or:[
+                {lessons:'physics'},
+                {lessons:'mathematics'}
+            ]
+        }
+    }
+])
+
+// 11) Знайти середній бал по 2 класі
+//
+db.students.aggregate([
+    {
+        $match: {class: 2}
+    },
+    {
+        $group: {
+            _id: null,
+            avg: {$avg: '$avgScore'}
+        }
+    }
+])
+
+// 12) Знайти дітей з не повною сімєю
+//
+db.students.aggregate([
+    {
+        $project: {
+            _id: '$_id',
+            parentsCount: {$size: {$ifNull: ["$parents", []]} }
+        }
+    },
+    {
+        $match: {
+            parentsCount: { $ne: 2 }
+        }
+    }
+])
+//
+db.students.aggregate([
+    {
+        $match: {
+            parents: {
+                // $exists: true,
+                $not: {
+                    $size: 2
+                }
+            }
+        }
+    }
+])
+
+
+// 13) Знайти батьків які не працюють
+//
 db.teacher.find()
 db.students.find()
 //
-db.students.aggregate(
+db.students.aggregate([
+    {
+        $match: {
+            parents: {
+                $elemMatch: {
+                    profession: {$exists: 0}
+                }
+            }
+        }
+    }
+])
 
-    )
 
-
-// 10) Знайти середній бал дітей які вивчають математику або фізику
-// 11) Знайти середній бал по 2 класі
-// 12) Знайти дітей з не повною сімєю
-// 13) Знайти батьків які не працюють
 // 14) Вигнати дітей, які мають середній бал менше ніж 2.5
 // 15) Дітям, батьки яких працюють в освіті ( teacher ) поставити 5
 // 16) Знайти дітей які вчаться в початковій школі (до 5 класу) і вивчають фізику ( physics )
 // 17) Знайти найуспішніший клас
 //
 // ********** Не працюючих батьків влаштувати офіціантами (підказка: гуглимо "arrayFilters")
-
-
-
-
-
-
