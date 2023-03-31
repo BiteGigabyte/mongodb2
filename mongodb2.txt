@@ -305,6 +305,9 @@ db.students.aggregate([
     }
 ])
 //
+dv.students.find(
+
+    )
 
 
 // 14) Вигнати дітей, які мають середній бал менше ніж 2.5
@@ -350,9 +353,6 @@ db.students.find({
 
 // 17) Знайти найуспішніший клас
 //
-db.teacher.find()
-db.students.find()
-//
 //групування по 1 студенту найкращому з класу по макс оцінці та макс предметах вивчення
 db.students.aggregate([
     {
@@ -382,7 +382,7 @@ db.students.aggregate([
     }
 ])
 //
-// групування по середній оцінці класу
+// групування по середній оцінці класу приєднанням деталей іншої таблиці
 db.students.aggregate([
     {
         $group: {
@@ -406,11 +406,39 @@ db.students.aggregate([
             class: '$_id',
             maxGrade: 1,
             maxLessons: 1,
-            _id: 0
+            _id: 0,
         }
-    }
+    },
+    {
+        $lookup: {
+            from: 'teacher',
+            localField: 'class',
+            foreignField: 'class_curator',
+            as: 'myTeacher'
+        }
+    },
+    {
+        $unwind: '$myTeacher'
+    },
+    {
+        $project: {
+            class: 1,
+            maxGrade: 1,
+            maxLessons: 1,
+            _id: 0,
+            teacherName: "$myTeacher.name",
+            teacherEmail: "$myTeacher.payment",
+            teacherPhone: "$myTeacher.lesson"
+        }
+    },
 ])
 
-
-
 // ********** Не працюючих батьків влаштувати офіціантами (підказка: гуглимо "arrayFilters")
+//
+db.teacher.find()
+db.students.find()
+//
+
+
+
+
