@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d76438d5-54fb-4849-b021-ae0a09782d80" name="Changes" comment="розв'язую ще остання і буду ще пробувати через агрегатки або наоборот дещо вирішити">
+    <list default="true" id="d76438d5-54fb-4849-b021-ae0a09782d80" name="Changes" comment="розв'язую ще останню">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2e301c3f-8cde-48d4-ba94-26002dba1450.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2e301c3f-8cde-48d4-ba94-26002dba1450.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongodb2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb2.txt" afterDir="false" />
     </list>
@@ -40,7 +42,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "Errors",
+    "settings.editor.selected.configurable": "database.query.execution",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -61,7 +63,9 @@
       <workItem from="1680123555566" duration="4564000" />
       <workItem from="1680176632291" duration="1000" />
       <workItem from="1680185918843" duration="34269000" />
-      <workItem from="1680269459794" duration="12612000" />
+      <workItem from="1680269459794" duration="13791000" />
+      <workItem from="1680373743484" duration="548000" />
+      <workItem from="1680423238197" duration="6558000" />
     </task>
     <task id="LOCAL-00001" summary="запушив базу">
       <created>1680123448743</created>
@@ -98,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680275302241</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="розв'язую ще останню">
+      <created>1680289155471</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680289155471</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +132,7 @@
     <MESSAGE value="запушив базу, розв'язую далі" />
     <MESSAGE value="розв'язую ще 2 і буду ще пробувати через агрегатки або наоборот дещо вирішити" />
     <MESSAGE value="розв'язую ще остання і буду ще пробувати через агрегатки або наоборот дещо вирішити" />
-    <option name="LAST_COMMIT_MESSAGE" value="розв'язую ще остання і буду ще пробувати через агрегатки або наоборот дещо вирішити" />
+    <MESSAGE value="розв'язую ще останню" />
+    <option name="LAST_COMMIT_MESSAGE" value="розв'язую ще останню" />
   </component>
 </project>

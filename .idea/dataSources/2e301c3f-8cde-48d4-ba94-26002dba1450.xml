@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="mongodbLsn2@cluster0.befsldd.mongodb.net">
-  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.45">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.48">
     <root id="1">
       <ServerVersion>5.0.15</ServerVersion>
     </root>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="IU-223.8617.56">
+  <component name="dataSourceStorageLocal" created-in="IU-231.8109.175">
     <data-source name="mongodbLsn2@cluster0.befsldd.mongodb.net" uuid="2e301c3f-8cde-48d4-ba94-26002dba1450">
       <database-info product="Mongo DB" version="5.0.15" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.18" dbms="MONGO" exact-version="5.0.15" exact-driver-version="1.18" />
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
@@ -12,6 +12,7 @@
             <name qname="@" />
             <name qname="Dec-2022_MongoDB" />
             <name qname="mongoddLsn2" />
+            <name qname="mongodbLsn2" />
           </node>
         </introspection-scope>
       </schema-mapping>
